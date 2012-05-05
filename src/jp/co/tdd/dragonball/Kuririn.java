@@ -6,4 +6,10 @@ public class Kuririn implements ZSenshi {
         return 13000;
     }
 
+    public String bukujutsu() {
+        String bukujutu = "普通に飛んだ！！";
+        System.out.println(bukujutu);
+        return bukujutu;
+    }
+
 }
