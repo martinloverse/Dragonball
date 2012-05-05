@@ -1,8 +1,15 @@
 package jp.co.tdd.dragonball;
 
-public interface ZSenshi {
+public abstract class ZSenshi {
 
-  public int getSentoryoku();
-  public String bukujutsu();
+  public abstract int getSentoryoku();
+
+  public abstract String getBukujutsuSokudo();
+
+  public String bukujutsu() {
+      String bukujutu = getBukujutsuSokudo() + "飛んだ！！";
+      System.out.println(bukujutu);
+      return bukujutu;
+  }
 
 }
