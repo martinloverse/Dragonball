@@ -6,9 +6,9 @@ public class ZSenshiTest extends TestCase {
 
     public void testSentoryoku() {
 
-        ZSenshi goku = new ZSenshi(ZSenshi.GOKU);
-        ZSenshi pikkoro = new ZSenshi(ZSenshi.PIKKORO);
-        ZSenshi kuririn = new ZSenshi(ZSenshi.KURIRIN);
+        ZSenshi goku = new Goku();
+        ZSenshi pikkoro = new Pikkoro();
+        ZSenshi kuririn = new Kuririn();
 
         assertNotNull("Z戦士は戦闘力を持つ", goku.getSentoryoku());
         assertNotNull("Z戦士は戦闘力を持つ", pikkoro.getSentoryoku());
