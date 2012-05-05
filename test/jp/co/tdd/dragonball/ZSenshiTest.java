@@ -28,16 +28,18 @@ public class ZSenshiTest extends TestCase {
 
     public void testBukujutu() {
 
-        ZSenshi goku = new Goku();
-        ZSenshi pikkoro = new Pikkoro();
-        ZSenshi kuririn = new Kuririn();
-
+        ZSenshi senshi = new Goku();
         assertEquals("悟空の舞空術", "目にもとまらぬ速さで飛んだ！！"
-                ,goku.bukujutsu());
+                ,senshi.bukujutsu());
+
+        senshi = new Pikkoro();
         assertEquals("ピッコロの舞空術", "ビュンと飛んだ！！"
-                ,pikkoro.bukujutsu());
+                ,senshi.bukujutsu());
+
+        senshi = new Kuririn();
         assertEquals("クリリンの舞空術", "普通に飛んだ！！"
-                ,kuririn.bukujutsu());
+                ,senshi.bukujutsu());
+
     }
 
 }
